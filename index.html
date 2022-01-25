@@ -4,9 +4,43 @@
     <title>건슥이의 우당탕탕 웹실습</title> <!-- 탭이름 -->
     <meta charset="utf-8"><!-- utp-8 방식으로 저장되었다는것 명시 -->
     <style>
+      body{
+        margin: 0;
+      }
+      div{
+        /*border: 2px solid yellowgreen;*/
+      }
       h1 {
         font-size:45px;
-        text-align:center;
+        text-align: center;
+        vertical-align: middle;
+        font-size:30px;
+        border-bottom:5px double navy;
+        padding: 3px;
+        margin: 0;
+      }
+      #intro{
+        border: 3px solid salmon;
+        text-align: center;
+        margin:20px;
+        padding:5px;
+      }
+      .list{
+        border-right:1px solid black;
+        width: 370px;
+        padding: 13px;
+      }
+      .list_title{
+        font-size:25px;
+        text-align: left;
+        font-weight: bold;
+      }
+      #html_list{
+        margin: 0;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 420px 1fr;
       }
     </style>
 
@@ -22,30 +56,36 @@
 </head>
 
 <body> <!-- 본문 정보 body-->
-  <h1 ><a href="prac1.html" style=color:skyblue;>웹페이지 실습용</a></h1> <!-- 제목 명시(6까지있음)-->
-  <p style="text-align:center;"><strong>안녕하세요!</strong> 건슥이의 <strong><u>실습용 웹페이지</u></strong> 입니다.<br> <!-- p = 문단 명시 / strong = 밑줄 -->
-  아직 웹 디자인은 되지 않은 상태이며, 기본적인 기능만 추가해봤습니다.<br>
-  <br></p> <!-- u = 밑줄 / br 줄바꿈 -->
-  제가 구현할 리스트는 다음과 같습니다!<br>
-  <ul> <!-- ul목차(무질서 목차) / ul과 li목차는 부모-자식 태그 관계-->
-    <h2>HTML 구현 기술목록</h2>
-      <li><strong><del>이미지(구현성공)</del></strong></li> <!-- del = 취소선-->
-      <li><strong><del>텍스트하이퍼링크+멀티웹페이지(구현성공)</del></strong></li><!-- li = list의 약자 목차를 나타내는 태그 -->
-      <li><strong><del>웹호스팅(구현성공)</del></strong></li>
-      <li><strong><del>남이 만든 댓글서비스(disqus)를 웹사이트에 구현하기</del></strong></li>
-      <li><strong><del>유튜브 동영상 삽입(구현성공)</del></strong></li>
-      <li><strong><del>남이만든 방문자분석기(구현성공)</del></strong></li>
-      <li>기타등등..</li>
-      </ul>
-  <ol> <!-- ol목차(질서 목차) / ol과 li목차는 부모-자식 태그 관계-->
-    <h2>CSS 구현예정 기술목록</h2>
-      <li><strong><del>글자색구현(구현성공)</del></strong></li>
-      <li><strong><del>가운데정렬(구현성공)</del></strong></li>
-      <li>동적반응</li>
-      <li>다크모드</li>
-      <li>그외기타등등..</li>
-  </ol>
-  <p style="margin-top:40px;text-align:center;"><strong>건슥이의 멋진 제주도사진</strong></p>
+  <h1><a style=color:darkslategray;>웹페이지 실습용</a></h1> <!-- 제목 명시(6까지있음)-->
+  <div id= "grid">
+  <div class = "list">
+    <ul id="html_list"> <!-- ul목차(무질서 목차) / ul과 li목차는 부모-자식 태그 관계-->
+      <div class ="list_title">HTML 구현 기술목록</div>
+        <li><strong><del>이미지 구현</del></strong></li> <!-- del = 취소선-->
+        <li><strong><del>텍스트하이퍼링크+멀티웹페이지 구현</del></strong></li><!-- li = list의 약자 목차를 나타내는 태그 -->
+        <li><strong><del>웹호스팅 구현</del></strong></li>
+        <li><strong><del>댓글서비스(disqus)를 웹사이트에 구현</del></strong></li>
+        <li><strong><del>유튜브 동영상 구현</del></strong></li>
+        <li><strong><del>방문자분석기 구현</del></strong></li>
+        <li>기타등등..</li>
+        </ul>
+    <ol "css_list"> <!-- ol목차(질서 목차) / ol과 li목차는 부모-자식 태그 관계-->
+      <div class ="list_title">CSS 구현예정 기술목록</div>
+        <li><strong><del>글자색구현</del></strong></li>
+        <li><strong><del>가운데정렬구현</del></strong></li>
+        <li><strong><del>그리드나누기구현</del></strong></li>
+        <li>동적반응 구현</li>
+        <li>다크모드</li>
+        <li>그외기타등등..</li>
+    </ol>
+</div>
+<div id= "article">
+<div id = "intro">
+<p style="text-align:center;"><strong>안녕하세요!</strong> 건슥이의 <strong><u>실습용 웹페이지</u></strong> 입니다.<br> <!-- p = 문단 명시 / strong = 밑줄 -->
+아직 웹 디자인은 되지 않은 상태이며, 기본적인 기능만 추가해봤습니다.<br>
+</div>
+<br></p> <!-- u = 밑줄 / br 줄바꿈 -->
+  <p style="text-align:center;font-size:20px;"><strong>건슥이의 멋진 제주도사진</strong></p>
   <p style="text-align:center;"><img src="https://blogpfthumb-phinf.pstatic.net/MjAyMjAxMDVfMjA0/MDAxNjQxMzE5NjE1NTE5.COzBiZRENy6EV5ZGKQje0-56wxVQY8_66xWtzruVaNEg.JIuzWlWmInmbzXBTknOWKRUg-31iLFrD9ouh1X28PUAg.PNG.h1101201/profileImage.png"width="55%"><br>
   <!-- img src = 이미지가 있는 주소 / width 는 사진 비율-->
   <strong>홍건슥..</strong> 이 남자의 인스타는 어떨까? <a href="https://www.instagram.com/bakukun_/?hl=ko" style="color:hotpink" target="_blank" title="홍건슥's instagram">인스타 바로가기</a><br>
@@ -61,6 +101,7 @@
 
   <br><br><p style="text-align:center;"><strong>혹시라도 그의 일상이 궁금하다면..? <del>구독부탁</del></strong> <br><br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/5CzKO4bHPwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
       <br><h3 style="text-align:center;">↓댓글기능 구현↓</h3><br>
       <div id="disqus_thread"></div>
       <script>
@@ -81,5 +122,7 @@
           })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </div>
   </body>
 </html>
