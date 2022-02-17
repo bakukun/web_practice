@@ -20,7 +20,8 @@ h1 {
   padding:5px;
 }
 .list{
-  border-right:1px solid black;
+  border-right:1px solid;
+  border-right-color: black;
   width: 370px;
   padding-right: 10px;
   padding-top: 13px;
@@ -36,4 +37,5 @@ h1 {
 #grid{
   display:grid;
   grid-template-columns: 390px 1fr;
+  border-color: coral;
 }
